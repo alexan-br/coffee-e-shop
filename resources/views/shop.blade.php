@@ -13,6 +13,7 @@
         <div class="container mx-auto">
             <div class="flex justify-between py-4">
                 <a href="/" wire:navigate.hover>Ma boutique</a>
+                <a href="/dashboard/products" wire:navigate.hover>Dashboard</a>
                 <livewire:cart />
             </div>
         </div>
