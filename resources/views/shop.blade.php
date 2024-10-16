@@ -12,7 +12,7 @@
     <div class="border-b border-slate-200">
         <div class="container mx-auto">
             <div class="flex justify-between py-4">
-                <a href="/shop" wire:navigate.hover>Ma boutique</a>
+                <a href="/" wire:navigate.hover>Ma boutique</a>
                 <livewire:cart />
             </div>
         </div>
