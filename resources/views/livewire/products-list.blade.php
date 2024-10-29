@@ -8,7 +8,6 @@
             <td class="p-4">Price</td>
             <td class="p-4">Thumbnail</td>
             <td class="p-4">Creation</td>
-            <td class="p-4">Creation</td>
             <td class="p-4">Options</td>
         </tr>
         @foreach ($products as $product)

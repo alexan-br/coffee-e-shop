@@ -21,18 +21,18 @@ class ProductsList extends Component
 
     public function delete(Product $product)
     {
-        $this->authorize('delete', $product);
-
         $product->delete();
-
         $this->dispatch('product-deleted');
+    }
+
+    public function edit(Product $product)
+    {
+        $this->emit('editProduct', $product);
     }
 
     #[On('product-created', 'product-deleted')]
     public function render()
     {
-
-
         if ($this->context === 'dashboard') {
             $products = Product::query()
                 ->when($this->search, fn($query) => $query->where('name', 'like', "%{$this->search}%"))
