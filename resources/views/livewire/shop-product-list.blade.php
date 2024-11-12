@@ -6,7 +6,7 @@
         <h1 class="text-4xl font-sans font-semibold text-center tracking-wide px-5 container mx-auto">Your way to enjoy coffee is unique, so are our products</h1>
     </div>
     <section class="bg-white py-10 px-5 mb-10">
-        <div class="container mx-auto flex flex-col lg:flex-row items-center text-center lg:text-left">
+        <div class="container mx-auto flex flex-col gap-10 lg:flex-row items-center text-center lg:text-left">
             <div class="lg:w-1/2">
                 <h2 class="text-3xl font-semibold mb-5">About Our Shop</h2>
                 <p class="text-lg mb-5">
@@ -19,8 +19,8 @@
                     Shop Now <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                 </a>
             </div>
-            <div class="lg:w-1/2 mt-5 lg:mt-0">
-                <img src="https://www.royalcupcoffee.com/sites/default/files/images/blog/AdobeStock_159183621update.jpg" alt="Coffee Image" class="w-full h-auto rounded-lg shadow-md">
+            <div class="lg:w-1/2">
+                <img src="https://i.ibb.co/2sdvT8v/Adobe-Stock-159183621update.webp" alt="Coffee Image" class="w-full h-auto rounded-lg shadow-md">
             </div>
         </div>
     </section>

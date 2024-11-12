@@ -4,17 +4,20 @@
         <ul>
             @forelse($products as $product)
                 <li class="flex items-center justify-between py-1">
-                    <div>{{ $product->name }}</div>
+                    <div class="flex flex-row items-center gap-2">
+                        <img class="max-w-10 h-auto" src="{{ $product->thumbnail }}" alt="{{ $product->name }}">
+                        <div>{{ $product->name }}</div>
+                    </div>
                     <div class="flex items-center gap-1 flex-nowrap">
                         <button
                             type="button"
-                            class="flex items-center justify-center w-8 h-8 rounded-full bg-slate-300"
+                            class="flex items-center justify-center w-8 h-8 rounded-full font-semibold bg-green-800 text-slate-50"
                             wire:click="decrement({{$product->id}})"
                         >-</button>
                         <div class="w-8 text-center">{{ $quantities[$product->id] ?? 0 }}</div>
                         <button
                             type="button"
-                            class="flex items-center justify-center w-8 h-8 rounded-full bg-slate-300"
+                            class="flex items-center justify-center w-8 h-8 rounded-full font-semibold bg-green-800 text-slate-50"
                             wire:click="increment({{$product->id}})"
                         >+</button>
                     </div>
