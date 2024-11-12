@@ -1,5 +1,5 @@
 <div x-data="{ open: false}" class="relative">
-    <button x-on:click="open = ! open">Mon panier ({{ array_sum($quantities) }})</button>
+    <button x-on:click="open = ! open">Cart ({{ array_sum($quantities) }})</button>
     <div x-show="open" x-on:click.outside="open = false" class="absolute bottom-0 right-0 p-4 translate-y-full bg-white shadow w-96">
         <ul>
             @forelse($products as $product)
@@ -20,7 +20,7 @@
                     </div>
                 </li>
             @empty
-                <li class="py-8 text-center">Votre panier est vide</li>
+                <li class="py-8 text-center">Your cart is empty</li>
             @endforelse
             <li class="flex items-center justify-between py-1 border-t border-slate-200">
                 <div>Total</div>

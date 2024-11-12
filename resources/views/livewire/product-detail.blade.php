@@ -22,7 +22,7 @@
 
     <button
         wire:click="addToCart"
-        class="bg-blue-500 text-white px-4 py-2 add-to-cart-button"
+        class="bg-orange-950 text-white px-4 py-2 view-button mt-2 block text-center rounded-md add-to-cart-button"
     >
         Add to Cart
     </button>
